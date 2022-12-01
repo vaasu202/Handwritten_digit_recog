@@ -8,7 +8,7 @@ pipeline {
     }
     stages("test"){
       steps{
-        echo "TESTING NOW"
+        sh 'python3 app.py'
       }
     }
     stages("deploy"){
