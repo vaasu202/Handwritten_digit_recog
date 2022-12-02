@@ -4,7 +4,7 @@ import numpy as np
 import os, io
 
 
-interpreter = tf.lite.Interpreter(model_path="model.tflite")
+interpreter = tf.lite.Interpreter(model_path="new_better_model.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
