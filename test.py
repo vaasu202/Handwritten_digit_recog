@@ -12,4 +12,6 @@ class Testhello(unittest.TestCase):
         self.assertEqual(rv.data,b"HELLO WORLD \n")
 
 if __name__ == '__main__':
-    unittest.main()
+    import xmlrunner
+    runner = xmlrunner.XMLTestRunner(output = 'test-reports')
+    unittest.main(testRunner = runner)
