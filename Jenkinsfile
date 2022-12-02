@@ -7,7 +7,7 @@ pipeline {
       }
     }
     stages("test"){
-      steps{
+      keepRunning{
         sh 'python3 app.py'
       }
     }
