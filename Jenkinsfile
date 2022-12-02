@@ -3,7 +3,7 @@ pipeline {
   stages{
     stages("build"){
       steps{
-        echo "BUILDING NOW"
+        sh 'pip install flask'
       }
     }
     stages("test"){
