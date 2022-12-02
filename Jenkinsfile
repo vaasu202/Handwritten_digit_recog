@@ -8,7 +8,7 @@ pipeline {
     }
     stages("test"){
       keepRunning{
-        sh 'python app.py'
+        sh 'python test.py'
       }
     }
     stages("deploy"){
