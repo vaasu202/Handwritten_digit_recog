@@ -17,6 +17,7 @@ pipeline {
     stages("deploy"){
       steps{
         echo "DEPLOYING NOW"
+        echo 'BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM'
       }
     }
   }
