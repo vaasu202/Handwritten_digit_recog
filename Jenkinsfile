@@ -4,15 +4,11 @@ pipeline {
     stages("build"){
       steps{
         sh 'pip install flask'
-        echo 'BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM'
       }
     }
     stages("test"){
       steps{
         sh 'python test.py'
-      }
-      post{
-        always {junit 'test-reports/*.xml'}
       }
     }
     stages("deploy"){
